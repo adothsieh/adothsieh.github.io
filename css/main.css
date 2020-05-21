@@ -1,3 +1,8 @@
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -13,30 +18,38 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    height: 50px;;
+    position: fixed;
+    top: 0;
 }
 
 .header {
     width: 60%;
+    height: 100%;
     border: 1px solid red;
     display: block;
 }
 
 .header-menu {
     border: 2px solid pink;
-    height: 30px;
+    height: 100%;;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
+    margin: 0;
 }
 
 .header-nav h3 {
     font-size: 25px;
+    margin: 0;
+    padding: 0;
 }
 
 .content-wrapper {
     width: 100%;
+    margin-top: 50px;
 }
 
 .welcome-wrapper {

@@ -4,34 +4,108 @@
         <link rel="stylesheet" type="text/css" href="./css/main.css">
         <title>Alex Hsieh | Portfolio</title>
     </head>
-    <body class="main-container">
-        <div class="wrapper">
-            <header class="header-wrapper">
-                <ul class="header-menu">
-                    <li>About</li>
-                    <li>Work</li>
-                    <li><h3>Alex Hsieh</h3></li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                </ul>
-            </header> 
-            <div class="content-wrapper">
-                <section class="welcome-section">
-                    <h3>Welcome</h3>
-                </section>
-                <section class="about-section">
-                    <h3>About</h3>
-                </section>
-                <section class="work-section">
-                    <h3>Work</h3>
-                </section>
-                <section class="blog-section">
-                    <h3>Blog</h3>
-                </section>
-                <section class="contact-section">
-                    <h3>Contact</h3>
-                </section>
-            </div>
+    <body id="main-container">
+        <header id="header-wrapper">
+            <ul id="header-menu">
+                <li>About</li>
+                <li>Work</li>
+                <li><h1>AH</h1></li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </header> 
+        <div id="content-wrapper">
+            <section id="welcome-section">
+                <div id="welcome-intro-wrapper">
+                    <h3>Hi</h3>
+                    <h2>I'm Alex.</h2>
+                    <h3>Student | Software Developer | Panda</h3>
+                </div>
+            </section>
+            <section id="about-section">
+                <div id="about-wrapper">
+                    <h1 class="section-title">About</h1>
+                    <p id="about-info">Pandas live mainly in temperate forests high in the mountains of southwest China, where they subsist almost entirely on bamboo. They must eat around 26 to 84 pounds of it every day, depending on what part of the bamboo they are eating. They use their enlarged wrist bones that function as opposable thumbs.</p>
+                    <! --- Stand in photo by Ningyu He on Unsplash -->
+                    <div id="about-image-wrapper">
+                        <img id="about-image" src="./img/about/about_profile_image.jpg" alt="Picture of Alex Hsieh" />
+                    </div>
+                </div>
+            </section>
+            <section id="project-section">
+                <h1 class="section-title">Projects</h1>
+                <div id="project-container">
+                    <div class="project-node">
+                        <img class="project-node-image" src="./img/project/project_image_1.jpg" alt="Project picture" />
+                    </div>
+                    <div class="project-node">
+                        <img class="project-node-image" src="./img/project/project_image_1.jpg" alt="Project picture" />
+                    </div>
+                    <div class="project-node">
+                        <img class="project-node-image" src="./img/project/project_image_1.jpg" alt="Project picture" />
+                    </div>
+                    <div class="project-node">
+                        <img class="project-node-image" src="data:," alt />
+                    </div>
+                </div>
+            </section>
+            <section id="blog-section">
+                <h1 class="section-title">Blog</h1>
+                <h2 id="blog-title">Recent Highlights</h2>
+                <div id="blog-container">
+                    <div class="blog-node">
+                        <!-- Photo by Li Jiangang on Unsplash --> 
+                        <img class="blog-node-image" src="./img/blog/blog_image_1.jpg" alt="Panda" />
+                        <div class="blog-node-meta">
+                            <p class="blog-node-tag">Food</p>
+                            <p class="blog-node-date">05/26/20</p>
+                        </div>
+                        <div class="blog-node-title-wrapper">
+                            <p class="blog-node-title">Food Pandas Like</p>
+                        </div>
+                    </div>
+                    <div class="blog-node">
+                        <!-- Photo by Li Jiangang on Unsplash --> 
+                        <img class="blog-node-image" src="./img/blog/blog_image_1.jpg" alt="Panda" />
+                        <div class="blog-node-meta">
+                            <p class="blog-node-tag">Food</p>
+                            <p class="blog-node-date">05/26/20</p>
+                        </div>
+                        <div class="blog-node-title-wrapper">
+                            <p class="blog-node-title">Food Pandas Like</p>
+                        </div>
+                    </div>
+                    <div class="blog-node">
+                        <!-- Photo by Li Jiangang on Unsplash --> 
+                        <img class="blog-node-image" src="./img/blog/blog_image_1.jpg" alt="Panda" />
+                        <div class="blog-node-meta">
+                            <p class="blog-node-tag">Food</p>
+                            <p class="blog-node-date">05/26/20</p>
+                        </div>
+                        <div class="blog-node-title-wrapper">
+                            <p class="blog-node-title">Food Pandas Like</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact-section">
+                <h1 class="section-title">Contact</h1> 
+                <div id="contact-container">
+                    <div class="contact-node">
+                        <h3 class="contact-node-title">Say Hello</h3>
+                        <div class="contact-node-links-wrapper">
+                            <img class="contact-node-link" src="./img/contact/linkedin_icon.png" alt="LinkedIn Logo" />
+                            <img class="contact-node-link" src="./img/contact/gmail_icon.png" alt="Gmail Logo" />
+                        </div>
+                    </div>
+                    <div class="contact-node">
+                        <h3 class="contact-node-title">Other Links</h3>
+                        <div class="contact-node-links-wrapper">
+                            <img class="contact-node-link" src="./img/contact/github_icon.png" alt="Github Logo" />
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </body>
 </html>

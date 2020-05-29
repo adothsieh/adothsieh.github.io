@@ -12,7 +12,7 @@
 }
 
 #header-wrapper {
-    width: 100%;
+    width: 100vh;
     border: 2px solid blue;
     display: flex;
     align-items: center;
@@ -25,6 +25,7 @@
 
 #header-menu {
     border: 2px solid pink;
+    background-color: white;
     height: 100%;
     width: 60%;
     list-style-type: none;
@@ -69,13 +70,13 @@
 
 .section-title {
     font-size: 35px;
-    width: 960px;
+    max-width: 960px;
+    min-width: 100%;
     text-transform: uppercase;
     letter-spacing: 10px;
     border: 1px solid blue;
-    margin-top: 50px;
-    margin-bottom: 50px;
     text-align: center;
+    margin: 20px auto 50px auto;
 }
 
 #about-section {
@@ -86,12 +87,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    padding-top: 50px;
 }
 
 #about-wrapper {
     height: 100%;
-    width: 960px;
+    max-width: 960px;
+    min-width: 100%;
     border: 1px solid green;
     display: block;
 }
@@ -105,10 +107,11 @@
 }
 
 #about-image-wrapper{
-    width: 100%;
+    max-width: 960px;
+    min-width: 100%;
     height: 250px;
     text-align: center;
-    border: 2px solid red;
+    border: 1px solid red;
 }
 
 #about-image{
@@ -122,6 +125,7 @@
     border: 1px solid black;
     width: 100%;
     display: block;
+    padding-top: 50px;
 }
 
 #project-container {
@@ -130,7 +134,8 @@
     text-align: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 960px;
+    max-width: 960px;
+    min-width: 100%;
     margin: 0 auto;
 }
 
@@ -152,6 +157,7 @@
     border: 1px solid black;
     width: 100%;
     display: block;
+    padding-top: 50px;
 }
 
 #blog-container {
@@ -159,17 +165,21 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 960px;
+    max-width: 960px;
+    min-width: 100%;
     margin: 0 auto;
 }
 
 #blog-title {
-    width: 960px;
+    max-width: 960px;
+    min-width: 100%;
     text-align: center;
     font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 10px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .blog-node {
@@ -207,7 +217,8 @@
 #contact-container {
     display: block;
     border: 1px solid green;
-    width: 960px;
+    max-width: 960px;
+    min-width: 100%;
     margin: 0 auto;
 }
 

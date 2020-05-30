@@ -16,6 +16,7 @@
     position: fixed;
     top: 0;
     background-color: white;
+    z-index: 20;
 }
 
 #header-menu {
@@ -47,6 +48,11 @@
 
 #welcome-section {
     font-family: 'Comfortaa', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    color: lemonchiffon;
     width: 100%;
     height: calc(100vh - 50px);
     display: flex;
@@ -63,6 +69,101 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: absolute;
+    z-index: 10;
+}
+
+#welcome-image-container {
+    max-width: 960px;
+    min-width: 80%;
+    height: 100%;
+    z-index: 1;
+}
+
+#welcome-image-container img {
+    position: absolute;
+    height: auto;
+}
+
+#welcome-image-1 {
+    left: 25%;
+    top: 25%;
+}
+
+#welcome-image-2 {
+    left: 43%;
+    top: 62%;
+}
+
+#welcome-image-3 {
+    left: 63%;
+    top: 20%;
+}
+
+#welcome-image-4 {
+    left: 45%;
+    top: 25%;
+}
+
+#welcome-image-5 {
+    left: 65%;
+    top: 50%;
+}
+
+#welcome-image-6 {
+    left: 25%;
+    top: 64%;
+}
+
+
+@media screen and (min-width: 960px) {
+    #welcome-image-container img {
+        position: absolute;
+    }
+
+    #welcome-image-1 {
+        width: 18%;
+        height: auto;
+        left: 23%;
+        top: 10%;
+    }
+
+    #welcome-image-2 {
+        width: 14%;
+        height: auto;
+        left: 43%;
+        top: 45%;
+    }
+
+    #welcome-image-3 {
+        width: 12%;
+        height: auto;
+        left: 66%;
+        top: 15%;
+    }
+
+    #welcome-image-4 {
+        width: 20%;
+        height: auto;
+        left: 45%;
+        top: 20%;
+    }
+
+    #welcome-image-5 {
+        width: 16%;
+        height: auto;
+        left: 60%;
+        top: 50%;
+    }
+
+    #welcome-image-6 {
+        width: 20%;
+        height: auto;
+        left: 25%;
+        top: 64%;
+    }
+
+
 }
 
 .section-title {

@@ -35,6 +35,7 @@
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: .25em;
+    margin-left: .25em;
     font-size: 12px;
     color: black;
 }
@@ -47,12 +48,7 @@
 }
 
 #welcome-section {
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 100px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: .25em;
-    color: lemonchiffon;
+    color: white;
     width: 100%;
     height: calc(100vh - 50px);
     display: flex;
@@ -60,6 +56,16 @@
     align-items: center;
     flex-direction: column;
     background-color: #C7E0E0;
+}
+
+#welcome-title {
+    font-family: 'Catamarah', sans-serif;
+    font-size: 5vw;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .75em;
+    line-height: 2em;
+    margin-left: .75em;
 }
 
 #welcome-intro-wrapper {
@@ -85,106 +91,69 @@
     height: auto;
 }
 
+@media screen and (max-width: 600px) {
+    #welcome-image-container img {
+        visibility: hidden;
+    }
+}
+
 #welcome-image-1 {
-    left: 25%;
-    top: 25%;
+    width: 12%;
+    left: 42%;
+    top: 23%;
 }
 
 #welcome-image-2 {
-    left: 43%;
-    top: 62%;
+    width: 10%;
+    left: 40%;
+    top: 60%;
 }
 
 #welcome-image-3 {
-    left: 63%;
+    width: 10%;
+    left: 60%;
     top: 20%;
 }
 
 #welcome-image-4 {
-    left: 45%;
-    top: 25%;
+    width: 10%;
+    left: 25%;
+    top: 66%;
 }
 
 #welcome-image-5 {
-    left: 65%;
-    top: 50%;
+    width: 10%;
+    left: 22%;
+    top: 30%;
 }
 
 #welcome-image-6 {
-    left: 25%;
-    top: 64%;
-}
-
-
-@media screen and (min-width: 960px) {
-    #welcome-image-container img {
-        position: absolute;
-    }
-
-    #welcome-image-1 {
-        width: 18%;
-        height: auto;
-        left: 23%;
-        top: 10%;
-    }
-
-    #welcome-image-2 {
-        width: 14%;
-        height: auto;
-        left: 43%;
-        top: 45%;
-    }
-
-    #welcome-image-3 {
-        width: 12%;
-        height: auto;
-        left: 66%;
-        top: 15%;
-    }
-
-    #welcome-image-4 {
-        width: 20%;
-        height: auto;
-        left: 45%;
-        top: 20%;
-    }
-
-    #welcome-image-5 {
-        width: 16%;
-        height: auto;
-        left: 60%;
-        top: 50%;
-    }
-
-    #welcome-image-6 {
-        width: 20%;
-        height: auto;
-        left: 25%;
-        top: 64%;
-    }
-
-
+    width: 15%;
+    left: 60%;
+    top: 55%;
 }
 
 .section-title {
     font-family: 'Comfortaa', sans-serif;
-    font-size: 20px;
+    font-size: 28px;
+    font-weight: 700;
     max-width: 960px;
     min-width: 100%;
     text-transform: uppercase;
-    letter-spacing: .50em;
+    letter-spacing: .40em;
     text-align: center;
-    margin: 20px auto 50px auto;
+    margin: 20px auto 100px .40em;
 }
 
 #about-section {
-    height: 530px;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #about-wrapper { 
@@ -198,28 +167,30 @@
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     line-height: 150%;
+    font-size: 15px;
 }
 
-#about-image-wrapper{
+#about-image-wrapper {
     max-width: 960px;
     min-width: 100%;
     height: 250px;
     text-align: center;
 }
 
-#about-image{
+#about-image {
     max-width: 100%;
     max-height: 250px;
 }
 
 
 #project-section {
-    height: 907px;
+    height: 100%;
     width: 100%;
     display: block;
-    padding-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: #EBEAEB;
 }
 
@@ -237,19 +208,86 @@
     text-align: center;
     height: 350px;
     width: 350px;
-    margin-bottom: 30px;
+    overflow: hidden;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
-.project-node-image {
-    max-width: 350px;
-    max-height: 350px;
+.project-node-desc {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 320px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+}
+
+.project-node-desc:hover {
+    opacity: 1;
+    transition: opacity 0.35s ease-in-out;
+}
+
+.project-node-desc-container {
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-node-desc-title {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .25em;
+    margin-left: .25em;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.project-node-desc-tech {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.project-node-desc-p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #A4A2A4;
+}
+
+.project-node-desc-links {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.project-node-desc-link-img {
+    max-width: 45px;
+    max-height: 45px;
+    opacity: 80%;
+    
 }
 
 #blog-section {
-    height: 450px;
+    height: 100%;
     width: 100%;
     display: block;
-    padding-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #blog-container {
@@ -271,7 +309,7 @@
     text-transform: uppercase;
     letter-spacing: .25em;
     margin-bottom: 30px;
-    margin-left: auto;
+    margin-left: .25em;
     margin-right: auto;
 }
 
@@ -299,11 +337,12 @@
 }
 
 #contact-section {
-    height: 350px;
+    height: 100%;
     width: 100%;
     display: block;
     background-color: #C7E0E0;
-    padding-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #contact-container {
@@ -325,6 +364,7 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .25em;
+    margin-left: .25em;
     font-size: 15px;
 }
 
@@ -340,4 +380,22 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
+}
+
+#footer {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 14px;
+    color: white;
+    background-color: #212227;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
 }

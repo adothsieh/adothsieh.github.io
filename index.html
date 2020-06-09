@@ -2,7 +2,8 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="./css/main.css">
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&Catamaran:wght@900&display=swap" rel="stylesheet"> 
+        <script type="text/javascript" src="./js/project_description.js"></script>
         <title>Alex Hsieh | Portfolio</title>
     </head>
     <body id="main-container">
@@ -17,7 +18,7 @@
         <div id="content-wrapper">
             <section id="welcome-section">
                 <div id="welcome-intro-wrapper">
-                    <h2>Alex Hsieh</h2>
+                    <h1 id="welcome-title">Alex<br>Hsieh</h1>
                 </div>
                 <div id="welcome-image-container">
                     <img id="welcome-image-1" src="./img/welcome/kyoto.jpg" alt="Kyoto" />
@@ -31,10 +32,14 @@
             <section id="about-section">
                 <div id="about-wrapper">
                     <h1 class="section-title">About</h1>
-                    <p id="about-info">Pandas live mainly in temperate forests high in the mountains of southwest China, where they subsist almost entirely on bamboo. They must eat around 26 to 84 pounds of it every day, depending on what part of the bamboo they are eating. They use their enlarged wrist bones that function as opposable thumbs.</p>
-                    <! --- Stand in photo by Ningyu He on Unsplash -->
+                    <p id="about-info">Hi, my name is Alex Hsieh.<br>
+                    I am an aspiring software developer and a fourth year student at the University
+                    of British Columbia in Vancouver.
+                    I really enjoy creating and learning new things which I hope to document on
+                    this website. <br><br>
+                    Welcome to a little insight into who I am.</p>
                     <div id="about-image-wrapper">
-                        <img id="about-image" src="./img/about/about_profile_image.jpg" alt="Picture of Alex Hsieh" />
+                        <img id="about-image" src="./img/about/sally.jpg" alt="Picture of Alex Hsieh" />
                     </div>
                 </div>
             </section>
@@ -42,13 +47,20 @@
                 <h1 class="section-title">Projects</h1>
                 <div id="project-container">
                     <div class="project-node">
-                        <img class="project-node-image" src="./img/project/project_image_1.jpg" alt="Project picture" />
-                    </div>
-                    <div class="project-node">
-                        <img class="project-node-image" src="./img/project/project_image_1.jpg" alt="Project picture" />
-                    </div>
-                    <div class="project-node">
-                        <img class="project-node-image" src="./img/project/project_image_1.jpg" alt="Project picture" />
+                        <img class="project-node-image" src="./img/project/webpage.png" alt="Project picture" />
+                        <div class="project-node-desc">
+                            <div class="project-node-desc-container">
+                                <h1 class="project-node-desc-title">Porfolio Website</h1>
+                                <h2 class="project-node-desc-tech">HTML, CSS, Javascript</h2>
+                                <p class="project-node-desc-p">My personal porfolio which you are viewing now!</p>
+                                <div class="project-node-desc-links">
+                                    <a href="https://adothsieh.github.io/" target="_blank"><img class="project-node-desc-link-img" src="./img/project/hyperlink.png" alt="Website Link" />
+                                    </a>
+                                    <a href="https://github.com/adothsieh/adothsieh.github.io" target="_blank"><img class="project-node-desc-link-img" src="./img/project/github_icon.png" alt="Github Link" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="project-node">
                         <img class="project-node-image" src="data:," alt />
@@ -61,36 +73,16 @@
                 <div id="blog-container">
                     <h2 id="blog-title">Coming Soon</h2>
                     <!--
-                    <div class="blog-node">
+                        <div class="blog-node">
                         <img class="blog-node-image" src="./img/blog/blog_image_1.jpg" alt="Panda" />
                         <div class="blog-node-meta">
-                            <p class="blog-node-tag">Food</p>
-                            <p class="blog-node-date">05/26/20</p>
+                        <p class="blog-node-tag">Food</p>
+                        <p class="blog-node-date">05/26/20</p>
                         </div>
                         <div class="blog-node-title-wrapper">
-                            <p class="blog-node-title">Food Pandas Like</p>
+                        <p class="blog-node-title">Food Pandas Like</p>
                         </div>
-                    </div>
-                    <div class="blog-node">
-                        <img class="blog-node-image" src="./img/blog/blog_image_1.jpg" alt="Panda" />
-                        <div class="blog-node-meta">
-                            <p class="blog-node-tag">Food</p>
-                            <p class="blog-node-date">05/26/20</p>
                         </div>
-                        <div class="blog-node-title-wrapper">
-                            <p class="blog-node-title">Food Pandas Like</p>
-                        </div>
-                    </div>
-                    <div class="blog-node">
-                        <img class="blog-node-image" src="./img/blog/blog_image_1.jpg" alt="Panda" />
-                        <div class="blog-node-meta">
-                            <p class="blog-node-tag">Food</p>
-                            <p class="blog-node-date">05/26/20</p>
-                        </div>
-                        <div class="blog-node-title-wrapper">
-                            <p class="blog-node-title">Food Pandas Like</p>
-                        </div>
-                    </div>
                     -->
                 </div>
             </section>
@@ -100,7 +92,7 @@
                     <div class="contact-node">
                         <h3 class="contact-node-title">Say Hello</h3>
                         <div class="contact-node-links-wrapper">
-                            <a href="https://www.linkedin.com/in/hsieh-alex"><img class="contact-node-link" src="./img/contact/linkedin_icon.png" alt="LinkedIn Logo" />
+                            <a href="https://www.linkedin.com/in/hsieh-alex" target="_blank"><img class="contact-node-link" src="./img/contact/linkedin_icon.png" alt="LinkedIn Logo" />
                             </a>
                             <a href="mailto:alexhsieh98@gmail.com"><img class="contact-node-link" src="./img/contact/gmail_icon.png" alt="Gmail Logo" />
                             </a>
@@ -109,12 +101,16 @@
                     <div class="contact-node">
                         <h3 class="contact-node-title">Other Links</h3>
                         <div class="contact-node-links-wrapper">
-                            <a href="https://github.com/adothsieh"><img class="contact-node-link" src="./img/contact/github_icon.png" alt="Github Logo" />
+                            <a href="https://github.com/adothsieh" target="_blank"><img class="contact-node-link" src="./img/contact/github_icon.png" alt="Github Logo" />
                             </a>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
+        <footer id="footer">
+            <div>Site hosted using Github Pages</div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>  
+        </footer>
     </body>
 </html>
